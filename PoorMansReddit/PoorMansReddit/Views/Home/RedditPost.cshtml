@@ -1,0 +1,9 @@
+﻿@model List<Child>
+
+@foreach (Child c in Model)
+{
+    <p><b>Title: </b>@c.data.title</p>
+    <p><b>URL: </b>@c.data.url</p>
+    <img src="@c.data.thumbnail" alt="@c.data.title"/>
+    <hr />
+}
