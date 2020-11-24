@@ -11,7 +11,6 @@ namespace PoorMansReddit.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         public RedditDAL Context = new RedditDAL();
 
         public IActionResult Index()
